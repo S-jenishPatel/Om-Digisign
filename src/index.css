@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "DM Sans";
-  src: url("../public/DMSans-VariableFont_opsz,wght.ttf");
+  src: url("/DMSans-VariableFont_opsz,wght.ttf");
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 
   /* Colors */
   --primary: hsl(0, 0%, 100%);
-  --secondary: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 11%);
   --tertiary: hsl(0, 0%, 65%);
   --accent: hsl(29, 55%, 57%);
 
@@ -38,4 +38,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[tabindex]:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--primary);
 }
